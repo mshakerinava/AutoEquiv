@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with matplotlib (https://matplotlib.org/) -->
+<svg height="72pt" version="1.1" viewBox="0 0 144 72" width="144pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+*{stroke-linecap:butt;stroke-linejoin:round;}
+  </style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 72 
+L 144 72 
+L 144 0 
+L 0 0 
+z
+" style="fill:none;"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 18 49.77 
+L 129.6 49.77 
+L 129.6 21.87 
+L 18 21.87 
+z
+" style="fill:none;"/>
+   </g>
+   <g clip-path="url(#pcb58f0451d)">
+    <image height="28" id="imagea1d4ed93b0" transform="scale(1 -1)translate(0 -28)" width="112" x="18" xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAAAHAAAAAcCAYAAAC51jtqAAAABHNCSVQICAgIfAhkiAAAAGFJREFUaIHt0UENwCAAwECYcQziiYngQZrcKWjSucbZg6zvdQB3DIwzMM7AOAPjDIwzMM7AOAPjDIwzMM7AOAPjDIwzMM7AOAPjDIwzMM7AOAPjDIwzMM7AOAPjDIwzMO4H+nMCgmtmgIIAAAAASUVORK5CYII=" y="-21.77"/>
+   </g>
+   <g id="PathCollection_1">
+    <defs>
+     <path d="M 0 0 
+L -2.236068 -0 
+M 0 0 
+L 1.118034 1.788854 
+M 0 0 
+L 1.118034 -1.788854 
+" id="m1f52e3137a" style="stroke:#ffffff;stroke-width:1.5;"/>
+    </defs>
+    <g clip-path="url(#pcb58f0451d)">
+     <use style="fill:#ffffff;stroke:#ffffff;stroke-width:1.5;" x="115.65" xlink:href="#m1f52e3137a" y="35.82"/>
+     <use style="fill:#ffffff;stroke:#ffffff;stroke-width:1.5;" x="87.75" xlink:href="#m1f52e3137a" y="35.82"/>
+     <use style="fill:#ffffff;stroke:#ffffff;stroke-width:1.5;" x="59.85" xlink:href="#m1f52e3137a" y="35.82"/>
+     <use style="fill:#ffffff;stroke:#ffffff;stroke-width:1.5;" x="31.95" xlink:href="#m1f52e3137a" y="35.82"/>
+    </g>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path clip-path="url(#pcb58f0451d)" d="M 45.9 49.77 
+L 45.9 21.87 
+" style="fill:none;stroke:#808080;stroke-linecap:square;stroke-opacity:0.5;stroke-width:0.8;"/>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <path clip-path="url(#pcb58f0451d)" d="M 73.8 49.77 
+L 73.8 21.87 
+" style="fill:none;stroke:#808080;stroke-linecap:square;stroke-opacity:0.5;stroke-width:0.8;"/>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <path clip-path="url(#pcb58f0451d)" d="M 101.7 49.77 
+L 101.7 21.87 
+" style="fill:none;stroke:#808080;stroke-linecap:square;stroke-opacity:0.5;stroke-width:0.8;"/>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2"/>
+   <g id="patch_3">
+    <path d="M 18 49.77 
+L 18 21.87 
+" style="fill:none;stroke:#000000;stroke-linecap:square;stroke-linejoin:miter;stroke-width:0.8;"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 129.6 49.77 
+L 129.6 21.87 
+" style="fill:none;stroke:#000000;stroke-linecap:square;stroke-linejoin:miter;stroke-width:0.8;"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 18 49.77 
+L 129.6 49.77 
+" style="fill:none;stroke:#000000;stroke-linecap:square;stroke-linejoin:miter;stroke-width:0.8;"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 18 21.87 
+L 129.6 21.87 
+" style="fill:none;stroke:#000000;stroke-linecap:square;stroke-linejoin:miter;stroke-width:0.8;"/>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pcb58f0451d">
+   <rect height="27.9" width="111.6" x="18" y="21.87"/>
+  </clipPath>
+ </defs>
+</svg>
