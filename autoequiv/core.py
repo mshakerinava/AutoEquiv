@@ -118,7 +118,7 @@ class LinearEquiv(nn.Module):
         self.register_buffer('idx_bias', torch.tensor(idx_bias, dtype=torch.long))
 
     def reset_parameters(self):
-        fan_in = self.in_features
+        fan_in = self.in_features * self.in_channels
         kaiming_uniform_(self.weight, a=math.sqrt(5), mode='fan_in', fan=fan_in)
         if self.bias is not None:
             bound = 1 / math.sqrt(fan_in)
