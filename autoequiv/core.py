@@ -7,59 +7,41 @@ from copy import deepcopy
 
 
 def create_colored_matrix(input_generators, output_generators):
+    def dfs(i, j, colors, color_idx, input_generators, output_generators):
+        colors[(i, j)] = color_idx
+        for k in range(len(input_generators)):
+            i_ = input_generators[k][i]
+            j_ = output_generators[k][j]
+            if (i_, j_) not in colors:
+                dfs(i_, j_, colors, color_idx, input_generators, output_generators)
+
     assert len(input_generators) == len(output_generators)
     assert len(input_generators) > 0
-    p = len(input_generators)
-    n = len(input_generators[0])
-    m = len(output_generators[0])
+    color_idx = 0
     colors = {}
-    for i in range(n):
-        for j in range(m):
-            colors[(i, j)] = i * m + j
-    while True:
-        old_colors = colors.copy()
-        for k in range(p):
-            input_gen = input_generators[k]
-            output_gen = output_generators[k]
-            for i in range(n):
-                for j in range(m):
-                    colors[(i, j)] = min(colors[(i, j)], colors[(input_gen[i], output_gen[j])])
-                    colors[(input_gen[i], output_gen[j])] = colors[(i, j)]
-        if colors == old_colors:
-            break
-    colors_list = sorted(list(set(colors.values())))
-    num_colors = len(colors_list)
-    # make colors be consecutive integers from 0 to `num_colors` - 1
-    color_to_idx = {colors_list[i]: i for i in range(num_colors)}
-    for k, v in colors.items():
-        colors[k] = color_to_idx[v]
-    assert min(colors.values()) == 0
-    assert max(colors.values()) == num_colors - 1
+    for i in range(len(input_generators[0])):
+        for j in range(len(output_generators[0])):
+            if (i, j) not in colors:
+                dfs(i, j, colors, color_idx, input_generators, output_generators)
+                color_idx += 1
     return colors
 
 
 def create_colored_vector(output_generators):
+    def dfs(i, colors, color_idx, output_generators):
+        colors[i] = color_idx
+        for k in range(len(output_generators)):
+            i_ = output_generators[k][i]
+            if i_ not in colors:
+                dfs(i_, colors, color_idx, output_generators)
+
     assert len(output_generators) > 0
-    p = len(output_generators)
-    m = len(output_generators[0])
-    colors = {i: i for i in range(m)}
-    while True:
-        old_colors = colors.copy()
-        for k in range(p):
-            output_gen = output_generators[k]
-            for i in range(m):
-                colors[i] = min(colors[i], colors[output_gen[i]])
-                colors[output_gen[i]] = colors[i]
-        if colors == old_colors:
-            break
-    colors_list = sorted(list(set(colors.values())))
-    num_colors = len(colors_list)
-    # make colors be consecutive integers from 0 to `num_colors` - 1
-    color_to_idx = {colors_list[i]: i for i in range(num_colors)}
-    for k, v in colors.items():
-        colors[k] = color_to_idx[v]
-    assert min(colors.values()) == 0
-    assert max(colors.values()) == num_colors - 1
+    color_idx = 0
+    colors = {}
+    for i in range(len(output_generators[0])):
+        if i not in colors:
+            dfs(i, colors, color_idx, output_generators)
+            color_idx += 1
     return colors
 
 
